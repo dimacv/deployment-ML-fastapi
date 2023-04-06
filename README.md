@@ -1,8 +1,12 @@
-# deployment-ML-fastapi
+# Deploying a machine learning model (complex scikit-learn pipeline) using FastAPI.
   
-### Сборка докера:
-docker build -t fastapi .  
+## Docker build:
+
+``` docker build -t fastapi . ```  
   
-### Запуск контейнера: 
-docker run -p 8000:8000 --name fastapi fastapi 
+--------------------------------------------------------------------------------
+
+## Starting a named container in daemon mode on port 8000 :
+
+``` docker run --rm -p 8000:8000 --name fastapi -d fastapi ``` 
 
